@@ -1,0 +1,24 @@
+第一题
+        static void Main(string[] args)
+        {
+            string ds = "2020/2/20 10:02:20";
+            DateTime dt = DateTime.Parse(ds);
+            dt = dt.AddDays(25).AddMinutes(8);
+            Console.WriteLine($"25天后:{dt.Year}年{dt.Month}月{dt.Day}日 {dt.TimeOfDay}");
+            NewMethod();
+
+        }
+
+        private static void NewMethod()
+        {
+            string yp = "2020/2/20 02:18:20";
+            DateTime dt = DateTime.Parse(yp);
+            dt = dt.AddDays(-25).AddMinutes(-8);
+            Console.WriteLine($"25天前:{dt.Year}年{dt.Month}月{dt.Day}日 {dt.TimeOfDay}");
+        }
+   第二题
+ int?[] arr = { 3, 7, null, 2, 5 };
+            int? s = 1;
+            foreach (int? a in arr)
+                s *= a ?? 1;
+            Console.WriteLine(s);
