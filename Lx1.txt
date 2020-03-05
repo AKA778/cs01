@@ -1,10 +1,18 @@
-��һ��
-        static void Main(string[] args)
+﻿C#企业级开发技术练习1答题卡
+
+班级：     信息管理2班
+姓名：     杨智华
+学号：     36
+
+注：请将答案放置在序号下方。*/
+
+（一）
+  static void Main(string[] args)
         {
             string ds = "2020/2/20 10:02:20";
             DateTime dt = DateTime.Parse(ds);
             dt = dt.AddDays(25).AddMinutes(8);
-            Console.WriteLine($"25���:{dt.Year}��{dt.Month}��{dt.Day}�� {dt.TimeOfDay}");
+            Console.WriteLine($"25天后:{dt.Year}年{dt.Month}月{dt.Day}日 {dt.TimeOfDay}");
             NewMethod();
 
         }
@@ -14,9 +22,10 @@
             string yp = "2020/2/20 02:18:20";
             DateTime dt = DateTime.Parse(yp);
             dt = dt.AddDays(-25).AddMinutes(-8);
-            Console.WriteLine($"25��ǰ:{dt.Year}��{dt.Month}��{dt.Day}�� {dt.TimeOfDay}");
+            Console.WriteLine($"25天前:{dt.Year}年{dt.Month}月{dt.Day}日 {dt.TimeOfDay}");
         }
-   �ڶ���
+
+（二）
  int?[] arr = { 3, 7, null, 2, 5 };
             int? s = 1;
             foreach (int? a in arr)
